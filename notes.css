@@ -7,3 +7,9 @@
 .stack-list{margin:32px 0}.stack-list>div{display:grid;grid-template-columns:135px minmax(0,1fr);gap:20px;padding:20px 0;border-top:1px solid var(--line)}.stack-list h3{font-size:17px;font-weight:500;margin:5px 0}.stack-list p{font-size:17px;margin:0}.prose code{font: .82em Plex,monospace;overflow-wrap:anywhere}.contents a{padding:7px 0}.contents{max-height:calc(100dvh - 72px);overflow-y:auto}@media(max-width:760px){.stack-list>div{grid-template-columns:1fr;gap:10px}.contents{max-height:none;overflow:visible}}
 .identity-study{margin:32px 0}.identity-sample{display:flex;align-items:center;gap:32px;padding:36px;border:1px solid var(--line);border-radius:20px}.identity-sample .monogram{font-size:100px;letter-spacing:-10px;line-height:1.15}.identity-name{font-size:20px;line-height:1.15}@media(max-width:400px){.identity-sample{padding:24px;gap:24px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.entry img{transition:none}.entry:hover img{transform:none}}
+/* Mirror the portfolio header exactly so page changes do not shift it. */
+.masthead{height:100px;padding:0 5%;gap:0;background:#eee6db;color:#35291f}
+@media(max-width:900px){.masthead{height:85px;padding:0 6%}.masthead nav{gap:22px}}
+@media(max-width:650px){.masthead nav{gap:16px;font-size:11px}}
+@media(min-width:601px) and (max-width:650px){.masthead nav a:first-child{display:inline-block}}
+@media(max-width:600px){.masthead{height:80px}.masthead .identity{font-size:12px;gap:13px}.masthead .monogram{font-size:39px}.masthead nav a:first-child{display:none}.masthead nav a span{display:none}}
