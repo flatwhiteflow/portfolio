@@ -5,7 +5,7 @@ deploy-pages:
   script:
     - mkdir -p public
     - cp -a assets public/assets
-    - cp -a *.html *.css *.js public/
+    - cp -a *.html *.css *.js *.xml *.txt public/
   pages:
     publish: public
   rules:
