@@ -1,0 +1,12 @@
+image: alpine:3.21
+
+deploy-pages:
+  stage: deploy
+  script:
+    - mkdir -p public
+    - cp -a assets public/assets
+    - cp -a *.html *.css *.js public/
+  pages:
+    publish: public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

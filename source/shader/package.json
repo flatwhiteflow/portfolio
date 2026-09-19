@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@react-three/fiber": "^9",
+    "@shadergradient/react": "*",
+    "esbuild": "*",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "three": "*"
+  },
+  "scripts": {
+    "build": "esbuild main.jsx --bundle --minify --format=esm --define:process.env.NODE_ENV=\\\"production\\\" --outfile=../../assets/shader.js"
+  }
+}
