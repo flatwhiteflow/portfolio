@@ -1,5 +1,5 @@
 /* Shared portfolio masthead: loaded after each page stylesheet. */
-header,.masthead{box-sizing:border-box;max-width:1440px;height:100px;margin:0 auto;padding:0 5%;display:flex;align-items:center;justify-content:space-between;gap:0;position:relative;z-index:2;background:#eee6db;color:#35291f}
+header,.masthead{box-sizing:border-box;max-width:1440px;height:100px;margin:0 auto;padding:0 5%;display:flex;align-items:center;justify-content:space-between;gap:0;position:relative;z-index:2}
 header .identity,.masthead .identity{display:flex;gap:16px;align-items:center;font-size:14px;line-height:1.1}
 header .monogram,.masthead .monogram{font-size:46px;letter-spacing:-5px;font-weight:500}
 header .monogram span,.masthead .monogram span{color:#8b5b3c}
