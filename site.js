@@ -125,24 +125,38 @@
     addEventListener('scroll', () => { if (!scrollFrame) scrollFrame = requestAnimationFrame(syncReading); }, {passive:true});
   }
   const stage = canvas.parentElement;
+  let activePointer = null;
   stage.addEventListener('pointerdown',e=>{
-    if(reduce.matches || e.pointerType==='touch' || e.button!==0)return;
+    if(activePointer!==null || !e.isPrimary || e.button!==0)return;
+    activePointer=e.pointerId;
     dragging=true;stage.classList.add('is-dragging');stage.setPointerCapture(e.pointerId);
+    if(e.pointerType!=='mouse') pointerX=pointerY=0;
     lastPointer={x:e.clientX,y:e.clientY,t:performance.now()};velocityX=velocityY=0;wake();
   });
   stage.addEventListener('pointermove',e=>{
-    if(reduce.matches||e.pointerType==='touch')return;
+    if(activePointer!==null && e.pointerId!==activePointer)return;
+    if(e.pointerType!=='mouse' && !dragging)return;
+    if(reduce.matches && !dragging)return;
     const r=stage.getBoundingClientRect(),now=performance.now();
     if(lastPointer){const dx=e.clientX-lastPointer.x,dy=e.clientY-lastPointer.y,dt=Math.max((now-lastPointer.t)/1000,.016);
-      energy=Math.min(1,Math.hypot(dx,dy)/dt/1400);
+      energy=reduce.matches?0:Math.min(1,Math.hypot(dx,dy)/dt/1400);
       if(dragging){dragX+=dx*.009;dragY+=dy*.006;velocityX=Math.max(-3,Math.min(3,dx*.009/dt));velocityY=Math.max(-2,Math.min(2,dy*.006/dt));}
     }
-    pointerX=((e.clientX-r.left)/r.width-.5)*1.05;
-    pointerY=((e.clientY-r.top)/r.height-.5)*.65;
+    if(e.pointerType==='mouse'){
+      pointerX=((e.clientX-r.left)/r.width-.5)*1.05;
+      pointerY=((e.clientY-r.top)/r.height-.5)*.65;
+    }
     lastPointer={x:e.clientX,y:e.clientY,t:now};wake();
   });
-  function release(){dragging=false;stage.classList.remove('is-dragging');wake();}
+  function release(e){
+    if(e.pointerId!==activePointer)return;
+    activePointer=null;dragging=false;lastPointer=null;stage.classList.remove('is-dragging');
+    if(e.type==='pointercancel' || reduce.matches)velocityX=velocityY=0;
+    if(stage.hasPointerCapture(e.pointerId))stage.releasePointerCapture(e.pointerId);
+    wake();
+  }
   stage.addEventListener('pointerup',release);stage.addEventListener('pointercancel',release);
+  stage.addEventListener('lostpointercapture',release);
   stage.addEventListener('pointerleave',()=>{if(!dragging){pointerX=pointerY=0;lastPointer=null;}wake();});
   new ResizeObserver(resize).observe(canvas);
   new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;if(visible)wake();else{cancelAnimationFrame(frame);frame=0;}},{rootMargin:'80px'}).observe(canvas);

@@ -160,3 +160,7 @@ body:not(.shader-version) .system-display{left:0;right:0;top:210px;width:100%;te
 @media(max-width:650px){.thread-footer .footer-colophon .footer-directory>div{gap:12px 16px}.thread-footer .footer-colophon .footer-directory a{font-size:11px}.thread-footer .footer-colophon .footer-directory .eyebrow{width:100%}.thread-footer .footer-colophon>a{margin-left:0}}
 /* Keep directional glyphs as typography on iOS rather than emoji. */
 .story-link span,.portrait-caption a,.case-sources a,.thread-footer a,.footer-colophon a,header nav a span{font-variant-emoji:text}
+
+/* Direct touch manipulation belongs to the sculpture, not the surrounding page. */
+.sculpture-stage{touch-action:none;cursor:grab}.sculpture-stage.is-dragging{cursor:grabbing}
+@media(max-width:650px){.system-display{display:none}}
