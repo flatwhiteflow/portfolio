@@ -164,3 +164,7 @@ body:not(.shader-version) .system-display{left:0;right:0;top:210px;width:100%;te
 /* Direct touch manipulation belongs to the sculpture, not the surrounding page. */
 .sculpture-stage{touch-action:none;cursor:grab}.sculpture-stage.is-dragging{cursor:grabbing}
 @media(max-width:650px){.system-display{display:none}}
+
+/* Keep the capped hero centred when the viewport exceeds its maximum width. */
+.studio-comparison .portrait-hero{width:calc(100% - 4%);max-width:1600px;margin-inline:auto}
+@media(max-width:600px){.studio-comparison .portrait-hero{width:calc(100% - 24px)}}
