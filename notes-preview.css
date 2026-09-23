@@ -1,0 +1,28 @@
+/* A small editorial still life for the draft, using illustrative transaction data. */
+.expense-preview{background:#e6d8c8!important}
+.expense-preview>a{display:block;color:var(--ink)}
+.expense-preview__scene{height:100%;position:relative;overflow:hidden;padding:18px;background:radial-gradient(circle at 62% 18%,#f4e9dc 0,#e6d8c8 55%,#d6c3b0 100%)}
+.expense-preview__topline{position:relative;z-index:2;display:flex;justify-content:space-between;gap:12px;font:9px/1.3 Plex,monospace;letter-spacing:.12em;color:#725e4f}
+.expense-preview__slips{position:absolute;inset:27% 10% auto;display:flex;align-items:flex-start;justify-content:center;filter:drop-shadow(0 16px 15px rgba(67,46,32,.14))}
+.expense-preview__slip{width:53%;min-height:94px;padding:11px 13px;border:1px solid rgba(68,50,37,.1);border-radius:12px;background:#f5f0e8;display:flex;flex-direction:column;gap:7px;font-size:12px;line-height:1.2;box-shadow:0 5px 12px rgba(67,46,32,.08)}
+.expense-preview__slip strong{font-weight:500;letter-spacing:-.02em}
+.expense-preview__slip>span:last-child{font-size:12px;color:#6d5b4e}
+.expense-preview__source{font:9px/1.2 Plex,monospace;letter-spacing:.1em;color:#815a40}
+.expense-preview__slip--back{transform:rotate(-7deg) translate(17px,16px)}
+.expense-preview__slip--front{transform:rotate(5deg) translate(-8px,-7px);background:#f9f6f0}
+.expense-preview__ledger{position:absolute;left:9%;right:9%;bottom:6%;display:grid;grid-template-columns:1fr auto;gap:3px 10px;padding:8px 12px;background:#fbf8f1;border:1px solid rgba(68,50,37,.14);border-radius:8px;box-shadow:0 10px 26px rgba(67,46,32,.12);font-size:12px}
+.expense-preview__index{grid-column:1/-1;font:9px/1.2 Plex,monospace;letter-spacing:.08em;color:#815a40}
+.expense-preview__ledger strong{font-weight:500}
+.expense-preview__category{grid-column:1/-1;font-size:11px;color:#76675c}
+@media(max-width:760px){.expense-preview__scene{padding:20px}.expense-preview__slips{inset:24% 10% auto}.expense-preview__slip{min-height:104px;padding:13px;font-size:12px}.expense-preview__ledger{bottom:7%;padding:10px 13px;font-size:12px}}
+
+/* The Notes cards stay modest, leaving the article titles to lead. */
+.entry figure{width:min(100%,280px);aspect-ratio:1.45;max-height:none}
+.entry figure>a{display:block;width:100%;height:100%}
+.terminal-preview{background:#d7c5b3!important;padding:12px}
+.terminal-preview__window{width:100%;height:100%;overflow:hidden;border:1px solid rgba(39,29,23,.55);border-radius:10px;background:#322923;box-shadow:0 9px 18px rgba(54,36,25,.23);color:#f1e7db}
+.terminal-preview__chrome{height:29px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 10px;border-bottom:1px solid rgba(243,238,229,.18);font:8px/1 Plex,monospace;letter-spacing:.02em;color:#cbb6a4}
+.terminal-preview__dots{display:flex;gap:4px}.terminal-preview__dots i{display:block;width:6px;height:6px;border-radius:50%;background:#a7836c}.terminal-preview__dots i:nth-child(2){background:#c6a88b}.terminal-preview__dots i:nth-child(3){background:#d6c2ac}
+.terminal-preview__body{display:flex;flex-direction:column;gap:8px;padding:15px 13px;font:10px/1.3 Plex,monospace;white-space:nowrap;letter-spacing:-.035em}
+.terminal-preview__body b{font-weight:400;color:#d8a17d}.terminal-preview__body em{font:inherit;color:#ddc09d}.terminal-preview__prompt{color:#a99687}.terminal-preview__body strong{font-weight:400;color:#f5e7d3}.terminal-preview__cursor{color:#c99570}
+@media(max-width:760px){.entry figure{width:min(100%,300px)}.terminal-preview__body{font-size:11px}}
