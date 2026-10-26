@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 640" role="img" aria-labelledby="title desc">
+  <title id="title">The Drop, finding its shape</title>
+  <desc id="desc">Three design stages: a flat silhouette, a softly shaded study, and a living illustrated Drop.</desc>
+  <defs>
+    <linearGradient id="paper" x2="1" y2="1"><stop stop-color="#e9ddd0"/><stop offset="1" stop-color="#d1bdae"/></linearGradient>
+    <radialGradient id="body" cx="34%" cy="24%" r="75%"><stop stop-color="#f5ebe0"/><stop offset=".48" stop-color="#d9c5b3"/><stop offset=".83" stop-color="#ae9583"/><stop offset="1" stop-color="#786154"/></radialGradient>
+    <radialGradient id="body2" cx="24%" cy="19%" r="85%"><stop stop-color="#fff9f0"/><stop offset=".28" stop-color="#ead8c9"/><stop offset=".7" stop-color="#b99e8a"/><stop offset="1" stop-color="#6e564a"/></radialGradient>
+    <linearGradient id="shine" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".72"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="13"/></filter>
+    <path id="drop" d="M0 -145 C25 -94 104 -57 109 25 C115 98 66 144 0 145 C-67 145 -115 98 -109 25 C-104 -57 -25 -94 0 -145Z"/>
+  </defs>
+  <rect width="1600" height="640" rx="30" fill="url(#paper)"/>
+  <text x="56" y="65" fill="#59463d" font-family="Arial,sans-serif" font-size="20" letter-spacing="4">THE DROP / THREE ITERATIONS</text>
+  <g fill="#f6f0e9" stroke="#c5b2a3" stroke-width="2">
+    <rect x="56" y="99" width="474" height="474" rx="22"/>
+    <rect x="563" y="99" width="474" height="474" rx="22"/>
+    <rect x="1070" y="99" width="474" height="474" rx="22"/>
+  </g>
+  <g fill="#745f52" font-family="Arial,sans-serif"><text x="91" y="147" font-size="18" letter-spacing="2">01 / SILHOUETTE</text><text x="598" y="147" font-size="18" letter-spacing="2">02 / SURFACE</text><text x="1105" y="147" font-size="18" letter-spacing="2">03 / A LITTLE LIFE</text></g>
+  <g transform="translate(293 341)"><ellipse cy="130" rx="112" ry="17" fill="#6b5347" opacity=".17" filter="url(#blur)"/><use href="#drop" fill="#302020"/><circle cx="-29" cy="45" r="9" fill="#f0e8e0"/><circle cx="28" cy="45" r="9" fill="#f0e8e0"/></g>
+  <g transform="translate(800 341)"><ellipse cy="130" rx="112" ry="17" fill="#6b5347" opacity=".22" filter="url(#blur)"/><use href="#drop" fill="url(#body)"/><path d="M-71 -25 C-60 -82 -20 -107 13 -80" fill="none" stroke="url(#shine)" stroke-width="10" stroke-linecap="round" opacity=".8"/><circle cx="-26" cy="42" r="9" fill="#302020"/><circle cx="31" cy="42" r="9" fill="#302020"/></g>
+  <g transform="translate(1307 341) rotate(-7)"><ellipse cy="130" rx="113" ry="17" fill="#6b5347" opacity=".22" filter="url(#blur)"/><use href="#drop" fill="url(#body2)"/><path d="M-70 -18 C-60 -75 -17 -107 22 -83" fill="none" stroke="url(#shine)" stroke-width="12" stroke-linecap="round" opacity=".85"/><ellipse cx="-16" cy="40" rx="10" ry="11" fill="#302020"/><ellipse cx="42" cy="39" rx="9" ry="10" fill="#302020"/><circle cx="-19" cy="37" r="2.2" fill="#fff" opacity=".8"/><circle cx="39" cy="36" r="2.2" fill="#fff" opacity=".8"/></g>
+  <g fill="none" stroke="#94796a" stroke-linecap="round" opacity=".65"><path d="M1180 272q-25 41-4 82" stroke-width="3"/><path d="M1428 245q30 27 21 60" stroke-width="3"/><path d="M1381 183l8 -13m24 26 15 -7" stroke-width="4"/></g>
+  <g fill="#56443b" font-family="Arial,sans-serif" font-size="23"><text x="91" y="530">Readable at 24 pixels</text><text x="598" y="530">Light gives it depth</text><text x="1105" y="530">Gaze and motion give it purpose</text></g>
+  <text x="56" y="613" fill="#7a6558" font-family="Arial,sans-serif" font-size="15" letter-spacing="1">EDITORIAL REDRAW OF THE DESIGN PROCESS · FINAL PROTOTYPE RENDERED IN CANVAS 2D</text>
+</svg>

@@ -1,0 +1,91 @@
+/* Scribby — private article draft. Shared portfolio styles remain in notes.css. */
+.scribby-note .intro{max-width:960px;margin-bottom:44px}
+.scribby-note .intro h1{max-width:930px}
+.scribby-note .intro p:not(.meta){max-width:735px}
+.scribby-note .intro .draft-kicker{color:var(--brown);margin-top:16px}
+.scribby-note .prose p a{color:var(--brown);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.scribby-note .prose p a:hover{color:var(--ink);text-decoration-thickness:2px}
+.scribby-note figcaption{font-size:11px;line-height:1.7}
+.scribby-note .evidence-label{display:block;text-transform:uppercase;font-size:10px;letter-spacing:.09em;color:var(--brown);margin-bottom:5px}
+.scribby-note .hero-art{margin:0 0 74px}
+.scribby-note .hero-art img{display:block;width:100%;height:auto;border-radius:26px;border:1px solid var(--line);background:#d9cbbc}
+.scribby-note .hero-art figcaption{max-width:700px}
+.scribby-note .prose h2{max-width:680px}
+.scribby-note .prose section{margin-bottom:80px}
+.scribby-note .prose blockquote{font-family:Georgia,serif;font-style:italic}
+.scribby-note .stage-mark{font:11px/1.5 Plex,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--brown);margin-bottom:14px!important}
+.scribby-note .render{margin:38px 0 44px;max-width:760px}
+.scribby-note .render img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid rgba(65,48,34,.14);box-shadow:0 24px 50px rgba(65,48,34,.08);background:#d8c9ba}
+.scribby-note .render:not(.render--drop) img{aspect-ratio:2124/1330;object-fit:cover;object-position:top}
+.scribby-note .render figcaption{margin-top:13px}
+.scribby-note .render--drop img{background:#f0e8e0}
+.scribby-note .recording-rule{margin:28px 0 32px;padding:24px 26px;border-radius:18px;background:#e6dacd;border:1px solid rgba(65,48,34,.12)}
+.scribby-note .recording-rule strong{display:block;font-size:17px;font-weight:500;margin-bottom:8px}
+.scribby-note .recording-rule p{font-size:16px;line-height:1.65;margin:0}
+.scribby-note .flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:36px 0 38px}
+.scribby-note .flow div{min-height:160px;padding:17px 15px;border:1px solid var(--line);border-radius:16px;background:#e9dfd4}
+.scribby-note .flow b{display:block;font:11px/1.4 Plex,monospace;color:var(--brown);margin-bottom:25px}
+.scribby-note .flow strong{display:block;font-size:16px;font-weight:500;letter-spacing:-.02em;line-height:1.25}
+.scribby-note .flow span{display:block;font-size:13px;line-height:1.45;color:var(--muted);margin-top:8px}
+.scribby-note .flow-note{font:11px/1.6 Plex,monospace;color:var(--muted);margin-top:-25px!important}
+.scribby-note .design-pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:32px 0}
+.scribby-note .design-pair figure{margin:0}
+.scribby-note .design-pair img{display:block;width:100%;height:auto;border-radius:15px;border:1px solid var(--line)}
+.scribby-note .film-aside{display:grid;grid-template-columns:1.25fr 1fr;gap:24px;align-items:center;margin:42px 0;padding:20px;border:1px solid var(--line);border-radius:20px;background:#e8ded3}
+.scribby-note .film-aside video{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;border-radius:13px;background:#302723}
+.scribby-note .film-aside p{font-size:15px;line-height:1.6;margin:8px 0 0}
+.scribby-note .film-aside strong{font-size:18px;font-weight:500}
+.scribby-note .technical{border-top:1px solid var(--line);padding:20px 0}
+.scribby-note .technical summary{cursor:pointer;margin-left:16px;font-size:18px;line-height:1.5}
+.scribby-note .technical[open] summary{margin-bottom:18px}
+.scribby-note .technical p{font-size:16px;line-height:1.7;margin-bottom:8px}
+.scribby-note #engineering{margin-top:112px;padding:44px 48px 12px;border-top:1px solid var(--line);background:linear-gradient(180deg,rgba(228,214,199,.45),transparent 75%)}
+.scribby-note #engineering::before{content:'Appendix / for the curious';display:block;margin-bottom:26px;font:10px/1.4 Plex,monospace;letter-spacing:.09em;text-transform:uppercase;color:var(--brown)}
+.scribby-note .draft-notice{margin:52px 0 42px;padding:14px 18px;border:1px dashed var(--brown);border-radius:12px;font:12px/1.5 Plex,monospace;color:var(--muted)}
+@media(max-width:760px){.scribby-note .intro h1{font-size:clamp(43px,9vw,68px)}.scribby-note .hero-art{margin-bottom:46px}.scribby-note .hero-art img{border-radius:18px}.scribby-note .prose section{margin-bottom:58px}.scribby-note .flow{grid-template-columns:1fr 1fr}.scribby-note .flow div{min-height:140px}.scribby-note .film-aside{grid-template-columns:1fr}.scribby-note #engineering{margin-top:72px;padding:34px 0 0;background:none}}
+@media(max-width:460px){.scribby-note .flow{gap:7px}.scribby-note .flow div{padding:13px}.scribby-note .flow strong{font-size:15px}.scribby-note .flow span{font-size:12px}.scribby-note .design-pair{grid-template-columns:1fr}}
+/* A readable editorial rendering of the two Mac integrations, not a screenshot. */
+.scribby-note .integration-illustration{margin:40px 0 48px}
+.scribby-note .integration-illustration>div{display:grid;grid-template-columns:1.05fr .95fr;gap:18px;padding:30px;border:1px solid rgba(65,48,34,.14);border-radius:24px;background:linear-gradient(135deg,#ded0c2,#c8b4a3)}
+.scribby-note .integration-illustration__label{font:10px/1.4 Plex,monospace;letter-spacing:.11em;color:#765e52;margin:0 0 13px}
+.scribby-note .integration-illustration__raycast,.scribby-note .integration-illustration__widgets{min-width:0}
+.scribby-note .integration-illustration__raycast{align-self:start;padding:18px;border-radius:19px;background:#f5efe9;box-shadow:0 14px 30px rgba(54,39,31,.13)}
+.scribby-note .integration-illustration__search{padding:10px 12px;margin-bottom:9px;border:1px solid #dbcbbd;border-radius:10px;font-size:17px;color:#4d3a32}
+.scribby-note .integration-illustration__search span{font-size:24px;line-height:0;vertical-align:-1px;color:#90776a}
+.scribby-note .integration-illustration__result{display:flex;align-items:center;gap:10px;padding:11px 8px;border-radius:9px;border-top:1px solid rgba(65,48,34,.09)}
+.scribby-note .integration-illustration__result:first-of-type{border-top:0}
+.scribby-note .integration-illustration__result:nth-of-type(3){background:#e7d9cb}
+.scribby-note .integration-illustration__glyph{display:grid;place-items:center;flex:none;width:27px;height:27px;border-radius:8px;background:#4b342f;color:#f7f2ec;font:15px/1 Arial,sans-serif}
+.scribby-note .integration-illustration__result strong{display:block;font-size:14px;font-weight:500;line-height:1.25}
+.scribby-note .integration-illustration__result small{display:block;font-size:11px;color:var(--muted);margin-top:2px}
+.scribby-note .integration-illustration__result kbd{margin-left:auto;color:#9a8477;font:12px Plex,monospace}
+.scribby-note .integration-illustration__widgets{display:flex;flex-direction:column;align-items:flex-start}
+.scribby-note .integration-illustration__small,.scribby-note .integration-illustration__large{border:1px solid rgba(255,255,255,.8);background:rgba(247,243,237,.85);box-shadow:0 12px 28px rgba(54,39,31,.1)}
+.scribby-note .integration-illustration__small{padding:13px 15px;border-radius:18px;min-width:168px;margin-bottom:10px}
+.scribby-note .integration-illustration__small small,.scribby-note .integration-illustration__large small{display:block;font:10px/1.4 Plex,monospace;color:#81695e;letter-spacing:.04em}
+.scribby-note .integration-illustration__small strong,.scribby-note .integration-illustration__large strong{display:block;font-size:16px;font-weight:500;margin:8px 0 4px}
+.scribby-note .integration-illustration__small span{display:block;font-size:11px;color:#715b50}
+.scribby-note .integration-illustration__small b{color:#c04437}
+.scribby-note .integration-illustration__large{align-self:stretch;padding:15px 17px;border-radius:18px}
+.scribby-note .integration-illustration__large p{font-size:12px;line-height:1.45;margin:5px 0 12px;color:#6d5b51}
+.scribby-note .integration-illustration__large div{display:flex;justify-content:space-between;gap:6px;padding:7px 0;border-top:1px solid #e0d5cb;font-size:11px}
+.scribby-note .integration-illustration__large div span{color:#867266}
+@media(max-width:760px){.scribby-note .integration-illustration>div{grid-template-columns:1fr;padding:18px}.scribby-note .integration-illustration__widgets{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}.scribby-note .integration-illustration__widgets .integration-illustration__label{grid-column:1/-1;margin:0}.scribby-note .integration-illustration__small{margin:0}}
+@media(max-width:460px){.scribby-note .integration-illustration__widgets{grid-template-columns:1fr}.scribby-note .integration-illustration__small{min-width:0}.scribby-note .integration-illustration__result strong{font-size:13px}}
+/* Design process: full-size renders remain available behind the compact studies. */
+.scribby-note .drop-study,.scribby-note .installer-study{margin:38px 0 48px;max-width:760px}
+.scribby-note .drop-study img{display:block;width:100%;height:auto;border-radius:20px;border:1px solid rgba(65,48,34,.14)}
+.scribby-note .drop-study figcaption,.scribby-note .installer-study figcaption{margin-top:13px}
+.scribby-note .render--board img{aspect-ratio:auto!important;object-fit:contain!important}
+.scribby-note .render--identity img{aspect-ratio:auto!important;object-fit:contain!important;background:#f6f3ee}
+.scribby-note #installer{margin:62px 0 0;padding-top:35px;border-top:1px solid var(--line)}
+.scribby-note #installer h3{font-size:clamp(27px,3.2vw,38px);font-weight:500;line-height:1.15;letter-spacing:-.045em;margin:0 0 26px}
+.scribby-note .installer-study{max-width:620px}
+.scribby-note .installer-study>a{display:block}
+.scribby-note .installer-study img{display:block;width:100%;height:auto;border-radius:16px;border:1px solid rgba(65,48,34,.14);box-shadow:0 14px 32px rgba(65,48,34,.06)}
+@media(max-width:560px){.scribby-note #installer{margin-top:48px;padding-top:28px}}
+.scribby-note .integration-illustration--raycast{margin-bottom:27px}
+.scribby-note .integration-illustration--raycast .integration-stage{display:block;background:linear-gradient(145deg,#d9c8b9,#b99f8e)}
+.scribby-note .integration-illustration--raycast .integration-illustration__raycast{max-width:590px;margin:auto}
+.scribby-note .render--widgets{margin-top:27px}
+.scribby-note .render--widgets img{aspect-ratio:auto!important;object-fit:contain!important;background:#8b8ea5}

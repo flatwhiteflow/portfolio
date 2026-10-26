@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1600 850" role="img" aria-labelledby="title desc">
+<title id="title">From conversation to a useful note, on this Mac</title><desc id="desc">An editorial diagram of two audio tracks moving into a locally written meeting note, in Scribby's warm linen and umber palette.</desc>
+<defs>
+ <linearGradient id="paper" x2="1" y2="1"><stop stop-color="#ece1d4"/><stop offset="1" stop-color="#cbb8a8"/></linearGradient>
+ <linearGradient id="track" x2="1"><stop stop-color="#a88978"/><stop offset="1" stop-color="#5a3d35"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="25" stdDeviation="30" flood-color="#3a2921" flood-opacity=".19"/></filter>
+ <pattern id="grain" width="8" height="8" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".35" fill="#4a352b" opacity=".13"/></pattern>
+</defs>
+<rect width="1600" height="850" fill="url(#paper)"/><rect width="1600" height="850" fill="url(#grain)"/>
+<path d="M80 118H1520" stroke="#71584b" stroke-opacity=".28"/>
+<text x="80" y="92" fill="#3b2b27" font-family="Arial,sans-serif" font-size="28" font-weight="600" letter-spacing="-.04em">Scribby.</text>
+<text x="1260" y="90" fill="#72594e" font-family="monospace" font-size="16" letter-spacing="2">ON THIS MAC  /  01</text>
+<text x="80" y="230" fill="#3b2b27" font-family="Georgia,serif" font-style="italic" font-size="78">The conversation</text>
+<text x="82" y="275" fill="#72594e" font-family="monospace" font-size="17" letter-spacing="2">ONE MEETING · TWO SEPARATE AUDIO TRACKS</text>
+<rect x="80" y="346" width="580" height="124" rx="25" fill="#f6f0e8" fill-opacity=".66" stroke="#9b8070" stroke-opacity=".42"/>
+<circle cx="124" cy="408" r="11" fill="#9d6c60"/>
+<text x="153" y="390" fill="#4d3a32" font-family="Arial,sans-serif" font-size="22" font-weight="600">You</text>
+<path d="M154 429h20v-16h12v29h12v-41h12v32h12v-15h12v-11h12v32h12v-54h12v49h12v-20h12v-8h12v36h12v-30h12v15h12v-37h12v46h12v-22h12v-13h12v30h12v-40h12v30h12v-11h12" fill="none" stroke="url(#track)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="80" y="492" width="580" height="124" rx="25" fill="#f6f0e8" fill-opacity=".66" stroke="#9b8070" stroke-opacity=".42"/>
+<circle cx="124" cy="554" r="11" fill="#654841"/>
+<text x="153" y="536" fill="#4d3a32" font-family="Arial,sans-serif" font-size="22" font-weight="600">Call</text>
+<path d="M154 578h20v-23h12v36h12v-55h12v32h12v-16h12v-25h12v58h12v-39h12v15h12v-35h12v51h12v-22h12v-17h12v39h12v-28h12v14h12v-51h12v58h12v-30h12v-10h12v33h12v-37h12v23h12v-11h12" fill="none" stroke="#71564d" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M690 485H790" fill="none" stroke="#71564d" stroke-width="2" stroke-dasharray="6 9"/><path d="m786 476 18 9-18 9" fill="none" stroke="#71564d" stroke-width="2" stroke-linejoin="round"/>
+<rect x="835" y="218" width="690" height="514" rx="28" fill="#faf6f0" filter="url(#shadow)"/>
+<path d="M835 288h690" stroke="#dfd0c1"/>
+<circle cx="876" cy="253" r="8" fill="#d4ab9f"/><circle cx="901" cy="253" r="8" fill="#dcc7a9"/><circle cx="926" cy="253" r="8" fill="#b9c8b2"/>
+<text x="970" y="260" fill="#755e52" font-family="monospace" font-size="14" letter-spacing="1">SCRIBBY / LIBRARY / NOTES</text>
+<text x="886" y="355" fill="#3b2b27" font-family="Arial,sans-serif" font-size="42" font-weight="600" letter-spacing="-2">After the call</text>
+<text x="887" y="389" fill="#856e61" font-family="monospace" font-size="14" letter-spacing="1">42 MIN · SAMPLE MEETING · NOTES READY</text>
+<path d="M886 422h588" stroke="#e7ddd3"/>
+<text x="886" y="468" fill="#634c42" font-family="monospace" font-size="15" letter-spacing="1">THE DECISION</text>
+<text x="887" y="510" fill="#3b2b27" font-family="Arial,sans-serif" font-size="24">Run the pilot before the renewal review.</text>
+<text x="886" y="565" fill="#634c42" font-family="monospace" font-size="15" letter-spacing="1">WHO DOES WHAT</text>
+<circle cx="900" cy="603" r="11" fill="#ac8570"/><text x="925" y="611" fill="#3b2b27" font-family="Arial,sans-serif" font-size="22">Send the pilot plan</text><text x="1400" y="610" fill="#8d786c" font-family="monospace" font-size="16">YOU</text>
+<circle cx="900" cy="651" r="11" fill="#ac8570"/><text x="925" y="659" fill="#3b2b27" font-family="Arial,sans-serif" font-size="22">Confirm the pricing options</text><text x="1370" y="658" fill="#8d786c" font-family="monospace" font-size="16">PRIYA</text>
+<path d="M80 775H1520" stroke="#71584b" stroke-opacity=".28"/>
+<text x="80" y="811" fill="#72594e" font-family="monospace" font-size="17" letter-spacing="2">AGREED FIRST. RECORDED LOCALLY. USEFUL AFTERWARDS.</text>
+</svg>
