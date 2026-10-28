@@ -28,7 +28,11 @@
   });
 
   const choose = key => {
-    entries.forEach(entry => entry.classList.toggle('is-filtered', key !== 'all' && entry.dataset.tag !== key));
+    const visible = entries.filter(entry => key === 'all' || entry.dataset.tag === key);
+    entries.forEach(entry => {
+      entry.classList.toggle('is-filtered', !visible.includes(entry));
+      entry.classList.toggle('is-first-visible', entry === visible[0]);
+    });
     [...filter.querySelectorAll('button')].forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === key)));
   };
   controls.forEach(({ key, label }) => {
@@ -39,4 +43,5 @@
     filter.append(button);
   });
   document.querySelector('.intro').after(filter);
+  choose('all');
 })();
