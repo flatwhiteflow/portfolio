@@ -12,4 +12,6 @@ Open `http://localhost:5174/`.
 
 ## Deploy
 
-GitLab Pages publishes the root static site through `.gitlab-ci.yml`.
+GitHub Pages publishes the static site from the `main` branch's root directory.
+The custom domain is `fabiopetriccione.com`. Configure it in the repository's
+Pages settings only after checking the initial GitHub Pages deployment.
