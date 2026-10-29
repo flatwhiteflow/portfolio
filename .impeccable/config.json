@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "assets/jot/interactive.html"
+        ],
+        "createdAt": "2026-10-29T22:34:21.482Z",
+        "reason": "User chose the portfolio and Scribby linen palette; this embedded study intentionally matches it"
+      }
+    ]
+  }
+}
