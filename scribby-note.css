@@ -89,3 +89,24 @@
 .scribby-note .integration-illustration--raycast .integration-illustration__raycast{max-width:590px;margin:auto}
 .scribby-note .render--widgets{margin-top:27px}
 .scribby-note .render--widgets img{aspect-ratio:auto!important;object-fit:contain!important;background:#8b8ea5}
+/* Keep the application prototype visible while cropping its presentation controls. */
+.scribby-note .render.render--app img{aspect-ratio:2124/1290;object-fit:cover;object-position:top}
+.scribby-note .jot-section{margin-top:62px;padding-top:35px;border-top:1px solid var(--line)}
+.scribby-note .jot-section h3{font-size:clamp(27px,3.2vw,38px);font-weight:500;line-height:1.15;letter-spacing:-.045em;margin:0 0 26px}
+.scribby-note .jot-directions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:760px;margin:36px 0 43px}
+.scribby-note .jot-directions figure{margin:0;min-width:0}
+.scribby-note .jot-directions img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:14px;border:1px solid rgba(65,48,34,.13)}
+.scribby-note .jot-directions figcaption{display:flex;flex-direction:column;gap:2px;margin-top:10px}
+.scribby-note .jot-directions figcaption b{font:11px/1.4 Plex,monospace;text-transform:uppercase;letter-spacing:.06em;color:var(--brown)}
+.scribby-note .jot-directions figcaption span{font-size:11px;line-height:1.4;color:var(--muted)}
+.scribby-note .jot-portrait{max-width:550px;margin:42px auto 47px}
+.scribby-note .jot-portrait img{display:block;width:100%;height:auto;border-radius:22px;border:1px solid rgba(65,48,34,.13);background:#ece3d8}
+.scribby-note .jot-portrait figcaption,.scribby-note .jot-expressions figcaption{margin-top:13px}
+.scribby-note .jot-expressions{max-width:760px;margin:42px 0 44px}
+.scribby-note .jot-expressions img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid rgba(65,48,34,.13);background:#ece3d8}
+.scribby-note .jot-motion{display:grid;grid-template-columns:minmax(0,280px) 1fr;align-items:center;gap:26px;max-width:760px;margin:40px 0 47px;padding:18px;border-radius:21px;border:1px solid var(--line);background:#e8ded3}
+.scribby-note .jot-motion video{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:13px;background:#dfd1c2}
+.scribby-note .jot-motion strong{display:block;font-size:20px;font-weight:500;line-height:1.25;letter-spacing:-.025em}
+.scribby-note .jot-motion p:not(.stage-mark){font-size:15px;line-height:1.55;margin:11px 0 0}
+@media(max-width:680px){.scribby-note .jot-motion{grid-template-columns:1fr}.scribby-note .jot-motion video{max-width:360px;margin:auto}}
+@media(max-width:460px){.scribby-note .jot-directions{gap:6px}.scribby-note .jot-directions img{border-radius:9px}.scribby-note .jot-directions figcaption span{display:none}}
