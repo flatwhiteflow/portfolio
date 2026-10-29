@@ -99,14 +99,12 @@
 .scribby-note .jot-directions figcaption{display:flex;flex-direction:column;gap:2px;margin-top:10px}
 .scribby-note .jot-directions figcaption b{font:11px/1.4 Plex,monospace;text-transform:uppercase;letter-spacing:.06em;color:var(--brown)}
 .scribby-note .jot-directions figcaption span{font-size:11px;line-height:1.4;color:var(--muted)}
-.scribby-note .jot-portrait{max-width:550px;margin:42px auto 47px}
-.scribby-note .jot-portrait img{display:block;width:100%;height:auto;border-radius:22px;border:1px solid rgba(65,48,34,.13);background:#ece3d8}
-.scribby-note .jot-portrait figcaption,.scribby-note .jot-expressions figcaption{margin-top:13px}
 .scribby-note .jot-expressions{max-width:760px;margin:42px 0 44px}
 .scribby-note .jot-expressions img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid rgba(65,48,34,.13);background:#ece3d8}
-.scribby-note .jot-motion{display:grid;grid-template-columns:minmax(0,280px) 1fr;align-items:center;gap:26px;max-width:760px;margin:40px 0 47px;padding:18px;border-radius:21px;border:1px solid var(--line);background:#e8ded3}
-.scribby-note .jot-motion video{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:13px;background:#dfd1c2}
-.scribby-note .jot-motion strong{display:block;font-size:20px;font-weight:500;line-height:1.25;letter-spacing:-.025em}
-.scribby-note .jot-motion p:not(.stage-mark){font-size:15px;line-height:1.55;margin:11px 0 0}
-@media(max-width:680px){.scribby-note .jot-motion{grid-template-columns:1fr}.scribby-note .jot-motion video{max-width:360px;margin:auto}}
+.scribby-note .jot-expressions figcaption{margin-top:13px}
 @media(max-width:460px){.scribby-note .jot-directions{gap:6px}.scribby-note .jot-directions img{border-radius:9px}.scribby-note .jot-directions figcaption span{display:none}}
+
+.scribby-note .jot-interactive{max-width:760px;margin:42px 0 46px}
+.scribby-note .jot-interactive iframe{display:block;width:100%;height:474px;border:0;border-radius:20px;background:#e8ded3}
+.scribby-note .jot-interactive figcaption{margin-top:13px}
+@media(max-width:1100px){.scribby-note .jot-interactive iframe{height:700px}}
