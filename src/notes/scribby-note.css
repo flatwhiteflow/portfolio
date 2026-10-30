@@ -1,4 +1,4 @@
-/* Scribby — private article draft. Shared portfolio styles remain in notes.css. */
+/* Scribby article. Shared portfolio styles remain in notes.css. */
 .scribby-note .intro{max-width:960px;margin-bottom:44px}
 .scribby-note .intro h1{max-width:930px}
 .scribby-note .intro p:not(.meta){max-width:735px}
@@ -102,7 +102,20 @@
 .scribby-note .jot-expressions{max-width:760px;margin:42px 0 44px}
 .scribby-note .jot-expressions img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid rgba(65,48,34,.13);background:#ece3d8}
 .scribby-note .jot-expressions figcaption{margin-top:13px}
+.scribby-note .jot-bible{max-width:760px;margin:40px 0 46px}
+.scribby-note .jot-bible a,.scribby-note .jot-world a{display:block;overflow:hidden;border-radius:18px;border:1px solid rgba(65,48,34,.17);background:#f9f5f0}
+.scribby-note .jot-bible img,.scribby-note .jot-world img{display:block;width:100%;height:auto}
+.scribby-note .jot-bible figcaption,.scribby-note .jot-world figcaption{font-size:13px;line-height:1.55;color:#5b4c40;margin-top:12px}
+.scribby-note .jot-bible .evidence-label,.scribby-note .jot-world .evidence-label{font-size:11px;line-height:1.5;color:#795238}
+.scribby-note .jot-section h4{font-size:clamp(23px,2.6vw,30px);font-weight:500;line-height:1.2;letter-spacing:-.035em;margin:54px 0 16px}
+.scribby-note .jot-world{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 14px;max-width:760px;margin:35px 0 48px}
+.scribby-note .jot-world figure{min-width:0;margin:0}
+.scribby-note .jot-world__desk{grid-column:1/-1}
+.scribby-note .jot-world__desk img{aspect-ratio:2/1;object-fit:cover;object-position:center 57%}
+.scribby-note .jot-world figure:not(.jot-world__desk) img{aspect-ratio:1;object-fit:cover}
+.scribby-note .jot-world figure:last-child img{object-position:center 43%}
 @media(max-width:460px){.scribby-note .jot-directions{gap:6px}.scribby-note .jot-directions img{border-radius:9px}.scribby-note .jot-directions figcaption span{display:none}}
+@media(max-width:560px){.scribby-note .jot-world{grid-template-columns:1fr;gap:24px}.scribby-note .jot-world__desk{grid-column:auto}.scribby-note .jot-world__desk img{aspect-ratio:3/2}.scribby-note .jot-world figure:not(.jot-world__desk) img{aspect-ratio:4/3}.scribby-note .jot-world figure:last-child img{aspect-ratio:1;object-position:center 45%}}
 
 .scribby-note .jot-interactive{max-width:760px;margin:42px 0 46px}
 .scribby-note .jot-interactive iframe{display:block;width:100%;height:474px;border:0;border-radius:20px;background:#e8ded3}
