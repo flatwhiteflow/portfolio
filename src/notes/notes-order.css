@@ -1,6 +1,8 @@
 /* Notes index: chronological cards and compact topic filters. */
 main#main { display: flex; flex-direction: column; }
-main#main > .intro { order: 0; }
+main#main > .intro { order: 0; max-width: none; }
+main#main > .intro h1 { font-size: clamp(44px, 6.4vw, 88px); }
+main#main > .intro p { max-width: 700px; }
 .notes-filters {
   order: 1;
   display: flex;
