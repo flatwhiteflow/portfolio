@@ -30,5 +30,18 @@
 /* Scribby cover uses the same compact frame as the other note previews. */
 .scribby-preview{background:#ded2c4!important}
 .scribby-preview img{object-fit:cover;object-position:center}
-.frame-preview{background:#d9cbbc!important}
-.frame-preview img{object-fit:cover;object-position:center 46%}
+
+/* Two of a Kind card: a framed print on a TV stand, in the site's own palette */
+.frame-preview{background:#e6d8c8!important}
+.frame-preview>a{display:block;color:var(--ink)}
+.frame-preview__scene{height:100%;position:relative;overflow:hidden;padding:20px;background:radial-gradient(circle at 38% 22%,#f4e9dc 0,#e6d8c8 55%,#d6c3b0 100%)}
+.frame-preview__topline{position:relative;z-index:2;display:flex;justify-content:space-between;gap:12px;font:9px/1.3 Plex,monospace;letter-spacing:.12em;color:#725e4f}
+.frame-preview__tv{position:absolute;left:16%;right:20%;top:17%;filter:drop-shadow(0 16px 15px rgba(67,46,32,.16))}
+.frame-preview__print{position:relative;z-index:1;padding:7px 7px 0;background:#f9f6f0;border:4px solid #a77d55;border-radius:3px;transform:rotate(-1.5deg)}
+.frame-preview__print svg{display:block;width:100%;height:auto;aspect-ratio:200/92}
+.frame-preview__caption{display:flex;align-items:baseline;justify-content:space-between;gap:8px;padding:5px 1px 6px}
+.frame-preview__caption span{font:6px/1.2 Plex,monospace;color:#6d5b4e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.frame-preview__caption em{font-size:11px;line-height:1;white-space:nowrap;color:var(--ink)}
+.frame-preview__tag{position:absolute;right:6%;bottom:6%;z-index:2;display:grid;gap:3px;padding:8px 12px;background:#fbf8f1;border:1px solid rgba(68,50,37,.14);border-radius:8px;box-shadow:0 10px 26px rgba(67,46,32,.12);font-size:12px;transform:rotate(2deg)}
+.frame-preview__index{font:9px/1.2 Plex,monospace;letter-spacing:.08em;color:#815a40}
+.frame-preview__tag strong{font-weight:500}
