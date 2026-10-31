@@ -3,6 +3,7 @@
   if (!entries.length) return;
 
   const details = [
+    { index: '04', tag: 'At home', key: 'home', date: 'Published 31 Oct 2026' },
     { index: '03', tag: 'Applied AI', key: 'ai', date: 'Published 26 Oct 2026' },
     { index: '02', tag: 'Personal finance', key: 'finance', date: 'Published 23 Sep 2026' },
     { index: '01', tag: 'Design / engineering', key: 'design', date: 'Published 19 Sep 2026' }
@@ -11,6 +12,7 @@
     { key: 'all', label: 'All notes' },
     { key: 'ai', label: 'Applied AI' },
     { key: 'design', label: 'Design / engineering' },
+    { key: 'home', label: 'At home' },
     { key: 'finance', label: 'Personal finance' }
   ];
   const filter = document.createElement('nav');
