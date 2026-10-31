@@ -30,3 +30,5 @@
 /* Scribby cover uses the same compact frame as the other note previews. */
 .scribby-preview{background:#ded2c4!important}
 .scribby-preview img{object-fit:cover;object-position:center}
+.frame-preview{background:#d9cbbc!important}
+.frame-preview img{object-fit:cover;object-position:center 46%}

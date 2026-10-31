@@ -1,0 +1,72 @@
+/* Two of a Kind article. Shared portfolio styles remain in notes.css. */
+.frame-note .intro{max-width:960px;margin-bottom:44px}
+.frame-note .intro h1{max-width:930px}
+.frame-note .intro p:not(.meta){max-width:735px}
+.frame-note .prose p a{color:var(--brown);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.frame-note .prose p a:hover{color:var(--ink);text-decoration-thickness:2px}
+.frame-note figcaption{font-size:11px;line-height:1.7}
+.frame-note .evidence-label{display:block;text-transform:uppercase;font-size:10px;letter-spacing:.09em;color:var(--brown);margin-bottom:5px}
+.frame-note .prose h2{max-width:680px}
+.frame-note .prose section{margin-bottom:80px}
+.frame-note .prose blockquote{font-family:Georgia,serif;font-style:italic}
+
+/* the photo of the TV, portrait, beside its caption */
+.frame-note .hero-photo{display:grid;grid-template-columns:minmax(0,520px) minmax(0,1fr);gap:48px;align-items:end;margin:0 0 74px}
+.frame-note .hero-photo img{display:block;width:100%;height:auto;border-radius:26px;border:1px solid var(--line);background:#d9cbbc}
+.frame-note .hero-photo figcaption{max-width:360px;margin:0 0 8px}
+
+.frame-note .render{margin:38px 0 44px}
+.frame-note .render img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid rgba(65,48,34,.14);box-shadow:0 24px 50px rgba(65,48,34,.08);background:#ede5da}
+.frame-note .render figcaption{margin-top:13px}
+
+/* the four frames, cross-fading like the swatches on the site */
+.frame-note .frame-cycle{margin:38px 0 44px}
+.frame-cycle__stage{position:relative;aspect-ratio:16/10;border-radius:18px;overflow:hidden;border:1px solid rgba(65,48,34,.14);box-shadow:0 24px 50px rgba(65,48,34,.08);background:#ede5da}
+.frame-cycle__stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:frame-cycle 12s infinite}
+.frame-cycle__stage img:nth-child(1){opacity:1;animation-delay:0s}
+.frame-cycle__stage img:nth-child(2){animation-delay:3s}
+.frame-cycle__stage img:nth-child(3){animation-delay:6s}
+.frame-cycle__stage img:nth-child(4){animation-delay:9s}
+@keyframes frame-cycle{0%{opacity:0}4%,25%{opacity:1}29%,100%{opacity:0}}
+.frame-cycle__names{display:flex;gap:18px;margin:13px 0 0;padding:0;list-style:none;font:10px/1.6 Plex,monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.frame-cycle__names li{animation:frame-name 12s infinite}
+.frame-cycle__names li:nth-child(2){animation-delay:3s}
+.frame-cycle__names li:nth-child(3){animation-delay:6s}
+.frame-cycle__names li:nth-child(4){animation-delay:9s}
+@keyframes frame-name{0%,29%,100%{color:var(--muted)}4%,25%{color:var(--brown)}}
+@media(prefers-reduced-motion:reduce){.frame-cycle__stage img,.frame-cycle__names li{animation:none}.frame-cycle__stage img:nth-child(1){opacity:1}}
+
+/* the nightly route, from the repo to the TV and the site */
+.night-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:36px 0 18px;padding:0;list-style:none}
+.night-flow li{position:relative;min-height:170px;padding:17px 15px;border:1px solid var(--line);border-radius:16px;background:#e9dfd4}
+.night-flow b{display:block;font:11px/1.4 Plex,monospace;color:var(--brown);margin-bottom:25px}
+.night-flow strong{display:block;font-size:16px;font-weight:500;letter-spacing:-.02em;line-height:1.25}
+.night-flow span{display:block;font-size:13px;line-height:1.45;color:var(--muted);margin-top:8px}
+.night-flow code{font:11px/1.4 Plex,monospace}
+.night-flow li::after{content:'';position:absolute;left:15px;right:15px;bottom:14px;height:2px;border-radius:2px;background:var(--brown);transform:scaleX(0);transform-origin:left;animation:night-step 8s infinite}
+.night-flow li:nth-child(2)::after{animation-delay:2s}
+.night-flow li:nth-child(3)::after{animation-delay:4s}
+.night-flow li:nth-child(4)::after{animation-delay:6s}
+@keyframes night-step{0%{transform:scaleX(0);opacity:1}20%{transform:scaleX(1);opacity:1}30%,100%{transform:scaleX(1);opacity:0}}
+@media(prefers-reduced-motion:reduce){.night-flow li::after{display:none}}
+.night-flow-caption{margin:0 0 40px}
+
+.frame-note .site-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.36fr);gap:14px;align-items:start;margin:38px 0 44px}
+.frame-note .site-pair figure{margin:0}
+.frame-note .site-pair img{display:block;width:100%;height:auto;border-radius:16px;border:1px solid rgba(65,48,34,.14);box-shadow:0 18px 40px rgba(65,48,34,.07);background:#ede5da}
+.frame-note .site-pair figcaption{margin-top:11px}
+
+.frame-note .rule-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:32px 0;border-block:1px solid var(--line);padding:24px 0}
+.frame-note .rule-strip strong{display:block;font-weight:400;font-size:32px;letter-spacing:-.035em}
+.frame-note .rule-strip span{display:block;font-size:14px;line-height:1.5;color:var(--muted);margin-top:7px}
+
+.frame-note .technical{border-top:1px solid var(--line);padding:20px 0}
+.frame-note .technical summary{cursor:pointer;list-style-position:outside;margin-left:16px;font-size:18px;line-height:1.5}
+.frame-note .technical[open] summary{margin-bottom:22px}
+.frame-note .prose .technical p{font-size:16px;line-height:1.75}
+.frame-note .prose pre{white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.9 Plex,monospace;margin:18px 0;padding:20px;background:#e9dfd3;border-radius:12px}
+.frame-note .prose pre code{font:inherit}
+
+@media(max-width:900px){.frame-note .hero-photo{grid-template-columns:1fr;gap:0}.frame-note .hero-photo img{max-width:520px}.frame-note .hero-photo figcaption{margin-top:16px}}
+@media(max-width:760px){.frame-note .intro h1{font-size:clamp(44px,10vw,68px)}.night-flow{grid-template-columns:1fr 1fr}.night-flow li{min-height:150px}.frame-note .rule-strip{grid-template-columns:1fr;gap:16px}.frame-note .rule-strip strong{font-size:28px}.article-layout,.prose{min-width:0}}
+@media(max-width:520px){.frame-note .site-pair{grid-template-columns:1fr}.frame-note .site-pair figure:last-child{max-width:260px}.frame-cycle__names{gap:12px}}
