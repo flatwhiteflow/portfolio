@@ -9,6 +9,10 @@ SOURCE = ROOT / "src"
 OUTPUT = ROOT / "dist"
 PUBLISHABLE = {".html", ".css", ".js", ".xml", ".txt"}
 SPECIAL = {"CNAME", ".nojekyll"}
+WEB_ANALYTICS = (
+    '<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" '
+    """data-cf-beacon='{"token": "ee43b742188a4599b64477398e85a14f"}'></script>"""
+)
 
 
 def copy_pages(directory: Path) -> None:
@@ -18,7 +22,16 @@ def copy_pages(directory: Path) -> None:
         destination = OUTPUT / source.name
         if destination.exists():
             raise RuntimeError(f"Duplicate published filename: {destination.name}")
-        copy2(source, destination)
+        if source.suffix == ".html":
+            html = source.read_text(encoding="utf-8")
+            if html.count("</body>") != 1:
+                raise RuntimeError(f"Expected one closing body tag: {source.name}")
+            destination.write_text(
+                html.replace("</body>", f"{WEB_ANALYTICS}</body>"),
+                encoding="utf-8",
+            )
+        else:
+            copy2(source, destination)
 
 
 def main() -> None:
